@@ -1,0 +1,7 @@
+body {
+  padding-top: 70px;
+}
+.navbar-item {
+  width: 100px;
+  text-transform: uppercase;
+}
