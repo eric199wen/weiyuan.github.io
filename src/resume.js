@@ -1,5 +1,6 @@
 const resume = {
   "about": {
+    "name": "Wei-Yuan Wen",
     "picture": "https://s.gravatar.com/avatar/053b5a5bf9f9c4b5595ad98b908d1200?s=120",
     "info": [
       "I am a web developer",
@@ -7,9 +8,9 @@ const resume = {
     ]
   },
   "contact": {
-    "Email": "w5wen@ucsd.edu",
-    "LinkedIn": "https://www.linkedin.com/in/wei-yuan-wen/",
-    "Github": "https://github.com/eric199wen"
+    "email": "w5wen@ucsd.edu",
+    "linkedin": "https://www.linkedin.com/in/wei-yuan-wen/",
+    "github": "https://github.com/eric199wen"
   },
   "education": [
     {

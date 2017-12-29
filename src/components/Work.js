@@ -1,14 +1,16 @@
 import React from 'react';
 
-export default (props) => {
+export default ({ detail }) => {
   return (
     <section id="work">
       <div className="row">
         <div className="col-md-2">
-          Image
+          <h3 className="section-title">Work</h3>
         </div>
         <div className="col-md-8">
-          Content
+          {detail[0].company}
+          <hr />
+          {detail[1].company}
         </div>
       </div>
     </section>

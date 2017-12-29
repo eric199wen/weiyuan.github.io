@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import resume from '../resume';
-import Home from './Home';
 import About from './About';
 import Education from './Education';
 import Work from './Work';
@@ -11,7 +10,6 @@ export default class App extends Component {
   onClick() {
     console.log("click");
   }
-
   render() {
     const { about, education, work, skills, portfolio, contact } = resume;
 
@@ -43,7 +41,6 @@ export default class App extends Component {
           </div>{/* /.container-fluid */}
         </nav>
         <div className="container">
-          <Home />
           <About picture={about.picture} info={about.info} contact={contact} />
           <Education detail={education}/>
           <Work detail={work}/>
