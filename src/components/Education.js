@@ -11,14 +11,14 @@ export default ({ detail }) => {
             </h4>
           </div>
           <div className="col-md-8">
-            <div className="institution">{detail[0].institution}</div>
+            <div className="section-subtitle">{detail[0].institution}</div>
             <p className="area">
               {`${detail[0].studyType} in ${detail[0].area}`}<span className="bullet">&#8226;</span>
               {detail[0].location}<span className="bullet">&#8226;</span>
               {`${detail[0].startDate} - ${detail[0].endDate}`}
             </p>
             <hr />
-            <div className="institution">{detail[1].institution}</div>
+            <div className="section-subtitle">{detail[1].institution}</div>
             <p className="area">
               {`${detail[1].studyType} in ${detail[1].area}`}<span className="bullet">&#8226;</span>
               {detail[1].location}<span className="bullet">&#8226;</span>

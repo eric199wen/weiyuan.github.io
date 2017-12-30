@@ -11,13 +11,13 @@ export default ({ detail }) => {
             </h4>
           </div>
           <div className="col-md-8">
-            <div className="company">{detail[0].company}</div>
+            <div className="section-subtitle">{detail[0].company}</div>
             <p className="area">
               {detail[0].position}<span className="bullet">&#8226;</span>
               {`${detail[0].startDate} - ${detail[0].endDate}`}
             </p>
             <hr />
-            <div className="company">{detail[1].company}</div>
+            <div className="section-subtitle">{detail[1].company}</div>
             <p className="area">
               {detail[1].position}<span className="bullet">&#8226;</span>
               {`${detail[1].startDate} - ${detail[1].endDate}`}

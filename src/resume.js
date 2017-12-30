@@ -66,26 +66,40 @@ const resume = {
       ]
     }
   ],
-  "skills": [
-    {
-        "name": "<SKILL_NAME>",
-        "level": "<SKILL_LEVEL>",
-        "keywords": [
-            "<KEYWORD_1>",
-            "<KEYWORD_2>",
-            "<KEYWORD_3>"
-        ]
-    },
-    {
-      "name": "<SKILL_NAME>",
-      "level": "<SKILL_LEVEL>",
-      "keywords": [
-          "<KEYWORD_1>",
-          "<KEYWORD_2>",
-          "<KEYWORD_3>"
-      ]
+  "skills": {
+    "programmingLanguage": [
+      {
+          "name": "Java",
+          "level": "8"
+      },
+      {
+        "name": "JavaScript",
+        "level": "7"
+      },
+      {
+        "name": "Python",
+        "level": "7"
+      },
+      {
+        "name": "C",
+        "level": "5"
+      }
+    ],
+    "techStack": [
+      {
+        "name": "React",
+        "level": "6"
+      },
+      {
+        "name": "React Native",
+        "level": "7"
+      },
+      {
+        "name": "HTML",
+        "level": "7"
+      }
+    ]
   }
-  ]
 }
 
 export default resume;
