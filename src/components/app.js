@@ -5,6 +5,7 @@ import Education from './Education';
 import Work from './Work';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
+import Footer from './Footer';
 
 export default class App extends Component {
   onClick() {
@@ -15,8 +16,8 @@ export default class App extends Component {
 
     return (
       <div>
-        <nav className="navbar navbar-inverse navbar-fixed-top">
-          <div className="container-fluid">
+        <nav className="navbar navbar-fixed-top navbar-inverse">
+          <div className="container-fluid content-container">
             {/* Brand and toggle get grouped for better mobile display */}
             <div className="navbar-header">
               <button onClick={this.onClick} type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -30,7 +31,6 @@ export default class App extends Component {
             {/* Collect the nav links, forms, and other content for toggling */}
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav">
-                <li className="navbar-item"><a href="#home">Home<span className="sr-only">(current)</span></a></li>
                 <li className="navbar-item"><a href="#about">About</a></li>
                 <li className="navbar-item"><a href="#education">Education</a></li>
                 <li className="navbar-item"><a href="#work">Work</a></li>
@@ -40,12 +40,16 @@ export default class App extends Component {
             </div> {/* /.navbar-collapse */}
           </div>{/* /.container-fluid */}
         </nav>
-        <div className="container">
+        <div>
           <About picture={about.picture} info={about.info} contact={contact} />
           <Education detail={education}/>
+          <hr className="section-devider"/>
           <Work detail={work}/>
+          <hr className="section-devider"/>
           <Skills detail={skills}/>
+          <hr className="section-devider"/>
           <Portfolio detail={portfolio}/>
+          <Footer contact={contact} />
         </div>
       </div>
     );

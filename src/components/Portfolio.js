@@ -4,11 +4,15 @@ export default (props) => {
   return (
     <section id="portfolio">
       <div className="row">
-        <div className="col-md-2">
-          <h3 className="section-title">Portfolio</h3>
-        </div>
-        <div className="col-md-8">
-
+        <div className="content-container">
+          <div className="col-md-2 content-title">
+            <h4>
+              <span className="section-title">Portfolio</span>
+            </h4>
+          </div>
+          <div className="col-md-8">
+            Coming soon!
+          </div>
         </div>
       </div>
     </section>

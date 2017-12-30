@@ -1,19 +1,123 @@
 body {
   padding-top: 70px;
+  margin: 0 auto 0 auto;
 }
 
-.navbar-item {
-  width: 100px;
+.navbar-container {
+  background-color: #363333;
+}
+
+.navbar-item a {
+  text-align: center;
   text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #cecece;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.navbar-item a:hover {
+  color: #459987;
+  background-color: transparent;
+}
+
+.content-container {
+  width: 70%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.content-title {
+  margin-bottom: 20px;
 }
 
 .section-title {
-  border-bottom: 5px solid #459987;
+  border-bottom: 3px solid #459987;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.section-devider {
+  width: 70%;
+  max-width: 1020px;
+}
+
+section, footer {
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+#about {
+  background-color: #2B2B2B;
+  margin-top: -20px;
+}
+
+#about img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#about h3{
+  color: #e7e7e7;
+}
+
+#about p {
+  color: #cecece;
+}
+
+ #about li a, #footer li a, #go-top a {
+  color: #cecece;
+  float: left;
+  background-color: transparent;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  /* padding: 10px 30px 10px 0px; */
+}
+
+#about li a:hover,  #footer li a:hover, #go-top a:hover {
+  color: #459987;
+}
+
+.institution, .company {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+.bullet {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#footer {
+  background-color: #2B2B2B;
+}
+
+#go-top {
+  margin-left: 45%;
+  float: left;
+  margin-top: -110px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #444444;
+}
+
+#go-top a {
+  width: 60px;
+  height: 60px;
+  margin-left: 25%;
+  margin-top: 10%;
 }

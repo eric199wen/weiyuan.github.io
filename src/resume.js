@@ -16,7 +16,8 @@ const resume = {
     {
       "institution": "National Tsing Hua University",
       "area": "Engineering and System Science",
-      "studyType": "Bachelor of Science",
+      "location": "Hsinchu, Taiwan",
+      "studyType": "B.S.",
       "startDate": "Sep 2011",
       "endDate": "Jun 2015",
       "gpa": "3.92/4.0",
@@ -29,7 +30,8 @@ const resume = {
     {
       "institution": "University of California, San Diego",
       "area": "Computer Science and Engineering",
-      "studyType": "Master of Science",
+      "location": "San Diego, CA",
+      "studyType": "M.S.",
       "startDate": "Sep 2016",
       "endDate": "Expected Mar 2018",
       "gpa": "3.48/4.0",
