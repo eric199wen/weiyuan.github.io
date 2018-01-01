@@ -87,6 +87,7 @@ section, footer {
 }
 
 #about li a:hover,  #footer li a:hover {
+  text-decoration: none;
   color: #459987;
 }
 
@@ -252,7 +253,7 @@ section, footer {
 }
 
 #portfolio {
-  background-color: #a5a4a4
+  background-color: #ddd;
 }
 
 #portfolio-title {
@@ -272,7 +273,7 @@ section, footer {
   backface-visibility: hidden;
 }
 
-.overlay {
+/* .overlay {
   background:rgba(0,0,0,.75);
   width: 100%;
   padding: 0 15px 0 15px;
@@ -283,23 +284,74 @@ section, footer {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
-}
+} */
 
-.portfolio-item:hover img {
+/* .portfolio-item:hover img {
   cursor: pointer;
 }
 
 .portfolio-item:hover .overlay {
   opacity: 1;
   cursor: pointer;
+} */
+
+.portfolio-item {
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.portfolio-item-data {
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.portfolio-item-data .tag {
+  text-transform: uppercase;
+  margin-left: 5px;
 }
 
 .portfolio-item-data p {
-  color: rgb(112, 112, 112);
+  margin-top: 10px;
+  color: #707070;
 }
 
-.portfolio-item-data h5, .link-icon {
-  color: #FFFFFF;
+.portfolio-item-footer {
+  background-color: #000000;
+  height: 50px;
+
+}
+
+.portfolio-item-footer i {
+  margin-right: 5px; 
+}
+
+.portfolio-item-footer a {
+  text-decoration: none;
+  color: #cecece;
+  background-color: transparent;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  font-size: 18px;
+}
+
+.portfolio-item-footer a:hover {
+  text-decoration: none;
+  color: #459987;
+}
+
+.portfolio-item-github {
+  position: absolute;
+  right: 35px;
+  bottom: 42px;
+}
+
+.portfolio-item-link {
+  position: absolute;
+  right: 130px;
+  bottom: 42px;
 }
 
 #footer {

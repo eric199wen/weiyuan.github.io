@@ -131,6 +131,7 @@ const resume = {
       "skill": ["React", "Node.js", "Firebase"],
       "github": "https://github.com/ssvictorlin/PI",
       "intro": "A social platform.",
+      "link": ""
     },
     {
       "name": "ChowNow",
@@ -138,6 +139,7 @@ const resume = {
       "skill": ["Node.js", ],
       "github": "https://github.com/ntbog/unlistedfood",
       "intro": "A mobile web app.",
+      "link": "https://a10-chownow.herokuapp.com/"
     },
     {
       "name": "Robot Game",
@@ -145,13 +147,15 @@ const resume = {
       "skill": ["Java"],
       "github": "https://github.com/eric199wen/Robot-Game",
       "intro": "A simple robot game.",
+      "link": ""
     },
     {
       "name": "weiyuan.github.io",
       "type": "Web",
       "skill": ["React"],
       "github": "https://github.com/eric199wen/weiyuan.github.io",
-      "intro": "A static single page personal website."
+      "intro": "A static single page personal website.",
+      "link": ""
     }
   ]
 }

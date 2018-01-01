@@ -1,18 +1,65 @@
 import React, { Component } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 
-export default class Portfoio extends Component {
+export default class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = { isOpen: false };
   }
 
-  close() {
+  closeModal() {
     this.setState({ isOpen: false });
   }
 
-  open() {
+  openModal() {
     this.setState({ isOpen: true });
+  }
+
+  renderPortfolioItem() {
+    return (
+      this.props.detail.map(item => {
+        return (
+          <div key={item.name} className="col-lg-4 col-md-4 col-sm-6">
+            <div className="portfolio-item">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="" />
+              <div className="portfolio-item-data">
+                <h4>{item.name}</h4>
+                <i className="fa fa-tag" aria-hidden="true"></i>
+                <span className="label label-success tag">{item.type}</span>
+                {this.renderSkill(item.skill)}
+                <p>{item.intro}</p>
+              </div>
+              <div className="portfolio-item-footer">
+                {item.link.length > 0 ? (
+                    <a className="portfolio-item-link" href={item.link}>
+                      <i className="fa fa-link" aria-hidden="true"></i>
+                      Link
+                    </a>
+                  ) : (
+                    <span />
+                  )
+                }
+                
+                <a className="portfolio-item-github" href={item.github}>
+                  <i className="fa fa-github-square" aria-hidden="true"></i>
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        )
+      })
+    )
+  }
+
+  renderSkill = (skill) => {
+    return (
+      skill.map(skillItem => {
+        return (
+          <span key={skillItem} className="label label-info tag">{skillItem}</span>
+        )
+      })
+    )
   }
 
   render() {
@@ -24,51 +71,7 @@ export default class Portfoio extends Component {
               <span className="section-subtitle">Portfolio</span>
             </div>
             <div className="row">
-              <div className="col-lg-3 col-sm-6">
-                <div className="portfolio-item">
-                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="" />
-                  <div className="overlay" onClick={this.open.bind(this)}>
-                    <div className="portfolio-item-data">
-                      <h5>{this.props.detail[0].name}</h5>
-                      <p>{this.props.detail[1].type}</p>
-                    </div>
-                    <div className="link-icon">
-                      <i className="fa fa-angle-down" aria-hidden="true"></i>
-                    </div>
-                    <Modal show={this.state.isOpen} onHide={this.close.bind(this)}>
-                      <Modal.Body>
-                        <div className="thumbnail">
-                          <img src="http://i.imgur.com/qK42fUu.jpg" alt="" />
-                        </div>
-                        <h4>Text in a modal</h4>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                        <i className="fa fa-tag" aria-hidden="true"></i>
-                        {this.props.detail[0].skill}
-                      </Modal.Body>
-                      <Modal.Footer>
-                        <a href={this.props.detail[0].github}>Details</a>
-                        <a onClick={this.close.bind(this)}>Close</a>
-                      </Modal.Footer>
-                    </Modal>
-                  </div>
-                </div>
-
-              </div>
-              <div className="col-lg-3 col-sm-6">
-                <div className="thumbnail">
-                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="" />
-                </div>
-              </div>
-              <div className="col-lg-3 col-sm-6">
-                <div className="thumbnail">
-                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="" />
-                </div>
-              </div>
-              <div className="col-lg-3 col-sm-6">
-                <div className="thumbnail">
-                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="" />
-                </div>
-              </div>
+              {this.renderPortfolioItem()}
             </div>
           </div>
         </div>
