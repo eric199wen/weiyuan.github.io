@@ -129,28 +129,28 @@ const resume = {
       "name": "Personality Insights",
       "type": "Android",
       "skill": ["React", "Node.js", "Firebase"],
-      "github": "",
+      "github": "https://github.com/ssvictorlin/PI",
       "intro": "A social platform.",
     },
     {
       "name": "ChowNow",
       "type": "Web",
       "skill": ["Node.js", ],
-      "github": "",
+      "github": "https://github.com/ntbog/unlistedfood",
       "intro": "A mobile web app.",
     },
     {
       "name": "Robot Game",
       "type": "Library",
       "skill": ["Java"],
-      "github": "",
+      "github": "https://github.com/eric199wen/Robot-Game",
       "intro": "A simple robot game.",
     },
     {
       "name": "weiyuan.github.io",
       "type": "Web",
       "skill": ["React"],
-      "github": "",
+      "github": "https://github.com/eric199wen/weiyuan.github.io",
       "intro": "A static single page personal website."
     }
   ]
