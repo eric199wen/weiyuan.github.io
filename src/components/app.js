@@ -47,7 +47,6 @@ export default class App extends Component {
           <Work detail={work}/>
           <hr className="section-devider"/>
           <Skills detail={skills}/>
-          <hr className="section-devider"/>
           <Portfolio detail={portfolio}/>
           <Footer contact={contact} />
         </div>

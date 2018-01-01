@@ -1,8 +1,6 @@
 import React from 'react';
 
 export default ({ picture, contact, info }) => {
-  const email_href = `mailto:${contact.email}`;
-
   return (
     <section id="about">
       <div className="row">
@@ -12,14 +10,14 @@ export default ({ picture, contact, info }) => {
           </div>
           <div className="col-md-8">
             <span>
-              <h3>About Me</h3>
+              <div className="section-subtitle">About Me</div>
             </span>
             <p>{info[0]}</p>
             <p>{info[1]}</p>
-            <h3>Contact Me</h3>
+            <div className="section-subtitle">Contact</div>
             <ul className="nav navbar-nav">
               <li>
-                <a href={email_href}>
+                <a href={`mailto:${contact.email}`}>
                   <i className="fa fa-envelope fa-2x"></i>
                 </a>
               </li>

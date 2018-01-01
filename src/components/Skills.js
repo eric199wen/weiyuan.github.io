@@ -5,8 +5,8 @@ export default class Skills extends Component {
     return (
       skills.map(skill => {
         return (
-          <li>
-            <span></span>
+          <li key={skill.name}>
+            <span className={`bar-expand percentage${skill.level}`}></span>
             <em>{skill.name}</em>
           </li>
         )
@@ -26,18 +26,18 @@ export default class Skills extends Component {
             </div>
             <div className="col-md-8">
               <div className="section-subtitle">Programming Languages</div>
-              <div className="bar">
+              <div className="bars">
                 <ul className="skills">
                   {this.renderSkills(this.props.detail.programmingLanguage)}
                 </ul>
               </div>
               <div className="section-subtitle">Tech Stack</div>
-              <div className="bar">
+              <div className="bars">
                 <ul className="skills">
                   {this.renderSkills(this.props.detail.techStack)}
                 </ul>
               </div>
-            </div>
+            </div>  
           </div>
         </div>
       </section>

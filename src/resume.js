@@ -70,36 +70,90 @@ const resume = {
     "programmingLanguage": [
       {
           "name": "Java",
-          "level": "8"
+          "level": "80"
       },
       {
         "name": "JavaScript",
-        "level": "7"
+        "level": "70"
       },
       {
         "name": "Python",
-        "level": "7"
+        "level": "70"
       },
       {
         "name": "C",
-        "level": "5"
+        "level": "50"
       }
     ],
     "techStack": [
       {
         "name": "React",
-        "level": "6"
+        "level": "70"
       },
       {
         "name": "React Native",
-        "level": "7"
+        "level": "70"
+      },
+      {
+        "name": "Node.js",
+        "level": "70"
       },
       {
         "name": "HTML",
-        "level": "7"
+        "level": "70"
+      },
+      {
+        "name": "CSS",
+        "level": "70"
+      },
+      {
+        "name": "jQuery",
+        "level": "70"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "70"
+      },
+      {
+        "name": "firebase",
+        "level": "60"
+      },
+      {
+        "name": "MySQL",
+        "level": "50"
       }
     ]
-  }
+  },
+  "portfolio": [
+    {
+      "name": "Personality Insights",
+      "type": "Android",
+      "skill": ["React", "Node.js", "Firebase"],
+      "github": "",
+      "intro": "A social platform.",
+    },
+    {
+      "name": "ChowNow",
+      "type": "Web",
+      "skill": ["Node.js", ],
+      "github": "",
+      "intro": "A mobile web app.",
+    },
+    {
+      "name": "Robot Game",
+      "type": "Library",
+      "skill": ["Java"],
+      "github": "",
+      "intro": "A simple robot game.",
+    },
+    {
+      "name": "weiyuan.github.io",
+      "type": "Web",
+      "skill": ["React"],
+      "github": "",
+      "intro": "A static single page personal website."
+    }
+  ]
 }
 
 export default resume;
