@@ -24,7 +24,7 @@ export default class Skills extends Component {
                 <span className="section-title">Skills</span>
               </h4>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-10">
               <div className="section-subtitle">Programming Languages</div>
               <div className="bars">
                 <ul className="skills">

@@ -7,6 +7,16 @@ body {
   background-color: #363333;
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 .navbar-item a {
   text-align: center;
   text-transform: uppercase;
@@ -64,7 +74,7 @@ section, footer {
 
 #about img {
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 #about .section-subtitle{
@@ -72,7 +82,9 @@ section, footer {
 }
 
 #about p {
-  color: #cecece;
+  color: #8b8b8b;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
  #about li a, #footer li a, #go-top a {
@@ -99,6 +111,14 @@ section, footer {
 
 .bullet {
   padding-left: 10px;
+  padding-right: 10px;
+}
+
+.highlight {
+  color: #838C95;
+}
+
+.highlight-bullet {
   padding-right: 10px;
 }
 
@@ -262,13 +282,12 @@ section, footer {
 }
 
 #portfolio .section-subtitle {
-
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .portfolio-item img {
   width: 100%;
-  height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -301,6 +320,7 @@ section, footer {
 }
 
 .portfolio-item-data {
+  height: 200px;
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
@@ -309,6 +329,7 @@ section, footer {
 .portfolio-item-data .tag {
   text-transform: uppercase;
   margin-left: 5px;
+  display: inline-block;
 }
 
 .portfolio-item-data p {
@@ -342,26 +363,54 @@ section, footer {
   color: #459987;
 }
 
-.portfolio-item-github {
+.footer-item {
+  float: left;
   position: absolute;
+  right: 0;
+}
+
+.portfolio-item-github {
   right: 35px;
-  bottom: 42px;
+  padding-top: 13px;
 }
 
 .portfolio-item-link {
-  position: absolute;
-  right: 130px;
-  bottom: 42px;
+  right: 135px;
+  padding-top: 13px;
 }
 
-#footer {
+footer {
   background-color: #2B2B2B;
+}
+
+footer h1 {
+  color: #cecece;
+}
+
+footer .social-media {
+  display: inline-block;
+}
+
+footer p {
+  color: #707070;
+  position: absolute;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #cecece;
+
+}
+
+footer p a:hover {
+  text-decoration: none;
+  color: #459987;
 }
 
 #go-top {
   margin-left: 46%;
   float: left;
-  margin-top: -110px;
+  margin-top: -130px;
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -377,5 +426,6 @@ section, footer {
   height: 60px;
   padding-top: 10%;
   padding-left: 25%;
+  border-radius: 100%;
   border-radius: 100%;
 }

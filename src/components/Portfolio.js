@@ -21,7 +21,7 @@ export default class Portfolio extends Component {
         return (
           <div key={item.name} className="col-lg-4 col-md-4 col-sm-6">
             <div className="portfolio-item">
-              <img src="http://i.imgur.com/qK42fUu.jpg" alt="" />
+              {/* <img src={item.thumbnail} alt="" /> */}
               <div className="portfolio-item-data">
                 <h4>{item.name}</h4>
                 <i className="fa fa-tag" aria-hidden="true"></i>
@@ -30,20 +30,26 @@ export default class Portfolio extends Component {
                 <p>{item.intro}</p>
               </div>
               <div className="portfolio-item-footer">
-                {item.link.length > 0 ? (
-                    <a className="portfolio-item-link" href={item.link}>
-                      <i className="fa fa-link" aria-hidden="true"></i>
-                      Link
+                <div className="row">
+                  <div className="footer-item" />
+                  <div className="footer-item portfolio-item-link">
+                    {item.link.length > 0 ? (
+                        <a href={item.link}>
+                          <i className="fa fa-link" aria-hidden="true"></i>
+                          Link
+                        </a>
+                      ) : (
+                        <span />
+                      )
+                    }
+                  </div>
+                  <div className="footer-item portfolio-item-github">
+                    <a href={item.github}>
+                      <i className="fa fa-github" aria-hidden="true"></i>
+                      GitHub
                     </a>
-                  ) : (
-                    <span />
-                  )
-                }
-                
-                <a className="portfolio-item-github" href={item.github}>
-                  <i className="fa fa-github-square" aria-hidden="true"></i>
-                  Github
-                </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -36,20 +36,19 @@ export default class App extends Component {
                 <li className="navbar-item"><a href="#work">Work</a></li>
                 <li className="navbar-item"><a href="#skills">Skills</a></li>
                 <li className="navbar-item"><a href="#portfolio">Portfolio</a></li>
+                <li className="navbar-item"><a href="#footer">Contact</a></li>
               </ul>
             </div> {/* /.navbar-collapse */}
           </div>{/* /.container-fluid */}
         </nav>
-        <div>
-          <About picture={about.picture} info={about.info} contact={contact} />
-          <Education detail={education}/>
-          <hr className="section-devider"/>
-          <Work detail={work}/>
-          <hr className="section-devider"/>
-          <Skills detail={skills}/>
-          <Portfolio detail={portfolio}/>
-          <Footer contact={contact} />
-        </div>
+        <About picture={about.picture} info={about.info} contact={contact} />
+        <Education detail={education}/>
+        <hr className="section-devider"/>
+        <Work detail={work}/>
+        <hr className="section-devider"/>
+        <Skills detail={skills}/>
+        <Portfolio detail={portfolio}/>
+        <Footer contact={contact} />
       </div>
     );
   }
